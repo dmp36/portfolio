@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divyanshu Prajapati | Creative Web Designer</title>
+  <meta name="description"
+    content="Portfolio of Divyanshu Prajapati, a creative web designer specializing in modern, aesthetic, and user-centric web experiences." />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://alexmorgan.design/" />
+  <meta property="og:title" content="Divyanshu Prajapati | Creative Web Designer" />
+  <meta property="og:description"
+    content="Portfolio of Divyanshu Prajapati, a creative web designer specializing in modern, aesthetic, and user-centric web experiences." />
+  <meta property="og:image" content="https://alexmorgan.design/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://alexmorgan.design/" />
+  <meta property="twitter:title" content="Divyanshu Prajapati | Creative Web Designer" />
+  <meta property="twitter:description"
+    content="Portfolio of Divyanshu Prajapati, a creative web designer specializing in modern, aesthetic, and user-centric web experiences." />
+  <meta property="twitter:image" content="https://alexmorgan.design/og-image.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">DIVYANSHU</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#projects" class="nav-link">Work</a></li>
+          <li><a href="#contact" class="nav-link btn-primary">Let's Talk</a></li>
+        </ul>
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="hero-subtitle">Hello, I'm Divyanshu</span>
+          <h1 class="hero-title">Crafting <span class="gradient-text">Digital Experiences</span> That Inspire.</h1>
+          <p class="hero-description">I design and build modern, aesthetic, and user-friendly websites that help brands
+            stand out in the digital age.</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#" class="btn btn-outline" onclick="alert('Resume download started (mock)!')">Download Resume</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="glass-card float-animation">
+            <div class="card-content">
+              <span class="icon">🎨</span>
+              <span class="text">UI Design</span>
+            </div>
+          </div>
+          <div class="glass-card float-animation delay-1">
+            <div class="card-content">
+              <span class="icon">💻</span>
+              <span class="text">Development</span>
+            </div>
+          </div>
+          <div class="gradient-orb"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Marquee -->
+    <div class="tech-stack">
+      <div class="marquee">
+        <div class="marquee-content">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Figma</span>
+          <span>Node.js</span>
+          <span>Git</span>
+          <span>UI/UX</span>
+          <!-- Duplicate for seamless loop -->
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Figma</span>
+          <span>Node.js</span>
+          <span>Git</span>
+          <span>UI/UX</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I'm a passionate web designer and developer based in San Francisco. With over 5 years of experience, I
+              specialize in creating clean, minimal, and functional websites.</p>
+            <p>My approach combines aesthetic design with robust engineering to deliver products that not only look good
+              but perform perfectly across all devices.</p>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-skills">
+            <div class="skill-tag">Responsive Design</div>
+            <div class="skill-tag">Interaction Design</div>
+            <div class="skill-tag">Prototyping</div>
+            <div class="skill-tag">Frontend Dev</div>
+            <div class="skill-tag">Accessibility</div>
+            <div class="skill-tag">SEO Optimization</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <div class="services-grid">
+          <div class="service-card glass-panel">
+            <div class="service-icon">✨</div>
+            <h3>Web Design</h3>
+            <p>Custom UI/UX design that reflects your brand identity and engages your audience.</p>
+          </div>
+          <div class="service-card glass-panel">
+            <div class="service-icon">🚀</div>
+            <h3>Development</h3>
+            <p>Clean, semantic, and fast code using modern technologies and best practices.</p>
+          </div>
+          <div class="service-card glass-panel">
+            <div class="service-icon">📱</div>
+            <h3>Responsive</h3>
+            <p>Websites that look and work perfectly on desktops, tablets, and mobile devices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section-title">Featured Work</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-image">
+              <div class="placeholder-img gradient-1"></div>
+            </div>
+            <div class="project-info">
+              <h3>E-Commerce Redesign</h3>
+              <p>A modern shopping experience with seamless checkout.</p>
+              <div class="project-tags">
+                <span>Figma</span>
+                <span>React</span>
+              </div>
+              <a href="#" class="project-link">View Project</a>
+            </div>
+          </article>
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-image">
+              <div class="placeholder-img gradient-2"></div>
+            </div>
+            <div class="project-info">
+              <h3>Finance Dashboard</h3>
+              <p>Intuitive dashboard for tracking personal finances.</p>
+              <div class="project-tags">
+                <span>Vue.js</span>
+                <span>D3.js</span>
+              </div>
+              <a href="#" class="project-link">View Project</a>
+            </div>
+          </article>
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-image">
+              <div class="placeholder-img gradient-3"></div>
+            </div>
+            <div class="project-info">
+              <h3>Travel App Landing</h3>
+              <p>High-conversion landing page for a travel startup.</p>
+              <div class="project-tags">
+                <span>HTML/CSS</span>
+                <span>GSAP</span>
+              </div>
+              <a href="#" class="project-link">View Project</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+      <div class="container">
+        <h2 class="section-title">Client Love</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card glass-panel">
+            <p>"Alex transformed our outdated website into a modern masterpiece. The attention to detail is unmatched."
+            </p>
+            <div class="client-info">
+              <strong>Sarah Johnson</strong>
+              <span>CEO, TechStart</span>
+            </div>
+          </div>
+          <div class="testimonial-card glass-panel">
+            <p>"Professional, creative, and easy to work with. Delivered the project ahead of schedule!"</p>
+            <div class="client-info">
+              <strong>Mike Chen</strong>
+              <span>Founder, DesignCo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section blog">
+      <div class="container">
+        <h2 class="section-title">Latest Insights</h2>
+        <div class="blog-grid">
+          <article class="blog-card glass-panel">
+            <div class="blog-date">Oct 24, 2024</div>
+            <h3>The Future of Web Design: AI & Glassmorphism</h3>
+            <p>Exploring how artificial intelligence and new design trends are shaping the digital landscape.</p>
+            <a href="#" class="read-more">Read Article →</a>
+          </article>
+          <article class="blog-card glass-panel">
+            <div class="blog-date">Sep 15, 2024</div>
+            <h3>Mastering CSS Grid & Flexbox</h3>
+            <p>A comprehensive guide to building complex layouts with modern CSS techniques.</p>
+            <a href="#" class="read-more">Read Article →</a>
+          </article>
+          <article class="blog-card glass-panel">
+            <div class="blog-date">Aug 02, 2024</div>
+            <h3>Optimizing Performance for React Apps</h3>
+            <p>Tips and tricks to make your React applications faster and more efficient.</p>
+            <a href="#" class="read-more">Read Article →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="contact-wrapper glass-panel">
+          <div class="contact-content">
+            <h2 class="section-title">Let's Work Together</h2>
+            <p>Have a project in mind? Fill out the form or send me an email.</p>
+            <div class="contact-details">
+              <a href="mailto:hello@alexmorgan.design" class="contact-link">hello@alexmorgan.design</a>
+              <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Dribbble</a>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" required placeholder="Tell me about your project"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#" class="logo">DIVYANSHU</a>
+          <p>Crafting digital experiences that inspire and engage.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Work</a>
+            <a href="#blog">Blog</a>
+          </div>
+          <div class="footer-column">
+            <h4>Social</h4>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Dribbble</a>
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>Subscribe to my newsletter for the latest design tips.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email">
+            <button type="submit" class="btn btn-primary">→</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Divyanshu Prajapati. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
