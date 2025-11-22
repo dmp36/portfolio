@@ -1,4 +1,5 @@
 import './style.css'
+import './animations-3d.js'
 
 // Mobile Menu Toggle
 const mobileBtn = document.querySelector('.mobile-menu-btn');

@@ -956,3 +956,218 @@ img {
   background: var(--accent-secondary);
   transform: translateY(-5px);
 }
+
+/* 3D Card Tilt Effects */
+.glass-panel,
+.project-card,
+.blog-card,
+.testimonial-card {
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-panel:hover,
+.project-card:hover,
+.blog-card:hover,
+.testimonial-card:hover {
+  transform: perspective(1000px) rotateX(2deg) rotateY(2deg) translateY(-8px);
+  box-shadow: 0 25px 50px -12px rgba(99, 102, 241, 0.25);
+}
+
+/* Parallax Effect for Hero Visual */
+.hero-visual {
+  transform-style: preserve-3d;
+}
+
+.gradient-orb {
+  transform: translateZ(-50px);
+  will-change: transform;
+}
+
+.glass-card {
+  will-change: transform;
+}
+
+/* Enhanced Project Card Animations */
+.project-card {
+  overflow: visible;
+  position: relative;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.project-image {
+  transform-style: preserve-3d;
+}
+
+.project-card:hover .project-image {
+  transform: translateZ(20px);
+}
+
+.project-info {
+  transform-style: preserve-3d;
+}
+
+.project-card:hover .project-info {
+  transform: translateZ(10px);
+}
+
+/* Skill Tags 3D Effect */
+.skill-tag {
+  transform-style: preserve-3d;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skill-tag:hover {
+  transform: translateZ(10px) scale(1.05);
+  background: rgba(99, 102, 241, 0.2);
+  box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.3);
+}
+
+/* Service Card 3D Depth */
+.service-card {
+  position: relative;
+}
+
+.service-icon {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+}
+
+.service-card:hover .service-icon {
+  transform: translateY(-10px) scale(1.1) rotateZ(5deg);
+}
+
+/* Floating Animation Enhancement */
+@keyframes float-3d {
+
+  0%,
+  100% {
+    transform: translateY(0) translateZ(0) rotateX(0deg);
+  }
+
+  50% {
+    transform: translateY(-20px) translateZ(20px) rotateX(5deg);
+  }
+}
+
+.float-animation {
+  animation: float-3d 6s ease-in-out infinite;
+}
+
+/* Glow Effect on Hover */
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn-primary:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Smooth Scroll Reveal Enhancement */
+@keyframes reveal-3d {
+  from {
+    opacity: 0;
+    transform: translateY(30px) rotateX(-15deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg);
+  }
+}
+
+.visible {
+  animation: reveal-3d 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Gradient Orb Pulse Enhancement */
+@keyframes pulse-3d {
+
+  0%,
+  100% {
+    transform: scale(1) translateZ(0);
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: scale(1.2) translateZ(30px);
+    opacity: 0.6;
+  }
+}
+
+.gradient-orb {
+  animation: pulse-3d 8s ease-in-out infinite;
+}
+
+/* Tech Stack Marquee 3D */
+.marquee-content span {
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.marquee-content span:hover {
+  transform: translateY(-5px) scale(1.1);
+  color: var(--accent-primary);
+}
+
+/* Form Input 3D Focus */
+.form-group input:focus,
+.form-group textarea:focus {
+  transform: translateZ(5px);
+  box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.3);
+}
+
+/* Footer Newsletter 3D */
+.newsletter-form input:focus {
+  transform: translateZ(5px);
+  box-shadow: 0 5px 15px -5px rgba(99, 102, 241, 0.2);
+}
+
+/* Perspective Container */
+body {
+  perspective: 1000px;
+}
+
+/* Smooth Hardware Acceleration */
+.glass-panel,
+.project-card,
+.blog-card,
+.btn,
+.skill-tag,
+.service-card {
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
